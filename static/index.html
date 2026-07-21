@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="robots" content="noindex">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todoアプリ</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+
+    <h1>Todo App</h1>
+
+    <div class="form-group">
+        <input type="text" id="todo-input" placeholder="新しいタスクを入力...">
+        <button onclick="createTodo()">追加</button>
+    </div>
+    <div class="backup-manager">
+        <h4 class="backup-manager__title">データのバックアップと復元</h4>
+        <div class="backup-manager__actions">
+            <button class="backup-manager__btn--export" onclick="exportJSON()">JSON書き出し</button>
+            <input class="backup-manager__file-input" type="file" id="import-file" accept=".json">
+            <button class="backup-manager__btn--import" onclick="importJSON()">読み込み</button>
+        </div>
+    </div>
+
+    <ul id="todo-list"></ul>
+
+    <script src="/static/js/main.js">
+
+    </script>
+</body>
+
+</html>

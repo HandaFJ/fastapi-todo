@@ -1,0 +1,17 @@
+services:
+  todo-api:
+    build: .
+    container_name: todo-app
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # SQLiteの保存先をボリューム配下に変更（コンテナ再作成してもデータが消えないように）
+      DATABASE_URL: sqlite:////app/data/todo.db
+    volumes:
+      - todo_data:/app/data
+
+volumes:
+  todo_data:

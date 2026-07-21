@@ -1,0 +1,24 @@
+# Python関連
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+venv_dir/
+.env
+
+# データベース関連
+*.db
+*.sqlite3
+
+# OS関連（macOS/Windows）
+.DS_Store
+Thumbs.db
+
+# エディタ・IDE関連
+.vscode/
+.idea/
+
+# Koyeb/デプロイ関連
+.python-version

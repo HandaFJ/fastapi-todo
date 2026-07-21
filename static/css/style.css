@@ -1,0 +1,113 @@
+body {
+  font-family: sans-serif;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: #f9f9f9;
+}
+
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px;
+  background: white;
+  border: 1px solid #eee;
+  margin-bottom: 8px;
+  border-radius: 4px;
+}
+
+.todo-text {
+  flex: 1;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.delete-btn {
+  background: #dc3545;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.delete-btn:hover {
+  background: #c82333;
+}
+
+.backup-manager {
+  margin: 20px 0;
+  padding: 15px;
+  background: #eee;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.backup-manager__title {
+  margin: 0;
+  color: #555;
+}
+
+.backup-manager__actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.backup-manager__btn--export {
+  background: #28a745;
+}
+
+.backup-manager__file-input {
+  font-size: 12px;
+  max-width: 150px;
+}
+
+.backup-manager__btn--import {
+  background: #17a2b8;
+  padding: 5px 10px;
+  font-size: 14px;
+}
